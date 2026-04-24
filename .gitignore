@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pt
+chroma_db/
+.env
+output/
+.venv/
+.vscode/
+.idea/
+.DS_Store
+output.png
+.pytest_cache/
+memory/

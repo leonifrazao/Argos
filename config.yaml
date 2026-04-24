@@ -1,0 +1,18 @@
+gemini:
+  model: "gemini-3-flash-preview"
+  api_key: "" # Deixe vazio aqui e use o arquivo .env pra maior segurança (ou cole direto aqui)
+
+yolo:
+  model_path: "src/domain/models/yolov8n.pt"
+  threshold: 0.5
+
+chroma:
+  db_path: "chroma_db"
+  embedder_model: "all-MiniLM-L6-v2"
+  top_k: 5
+
+dataset:
+  path: "dataset"
+
+output:
+  results_path: "output/results.json"
