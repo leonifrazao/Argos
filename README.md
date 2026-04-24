@@ -178,7 +178,7 @@ O resultado será exibido em uma tabela formatada com a biblioteca `Rich`, conte
 
 **Leoni Frazão** — leoni.frazao.oliveira@gmail.com
 
-Link do Projeto: [https://gitlab.com/leoni.frazao.oliveira/Argos](https://gitlab.com/leoni.frazao.oliveira/Argos)
+Link do Projeto: [https://github.com/leonifrazao/Argos](https://github.com/leonifrazao/Argos)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
