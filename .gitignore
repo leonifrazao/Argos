@@ -11,4 +11,5 @@ output/
 output.png
 .pytest_cache/
 memory/
+.flox/
 dataset/

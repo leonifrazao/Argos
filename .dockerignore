@@ -12,3 +12,4 @@ output.png
 .pytest_cache/
 memory/
 dataset/
+.flox/
