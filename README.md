@@ -103,7 +103,7 @@ Siga os passos abaixo para configurar o ambiente e executar o pipeline de confor
 
 1. Clone o repositório
    ```sh
-   git clone https://gitlab.com/leoni.frazao.oliveira/Argos.git
+   git clone https://github.com/leonifrazao/Argos.git
    cd Argos
    ```
    
@@ -121,9 +121,14 @@ Siga os passos abaixo para configurar o ambiente e executar o pipeline de confor
    nix-shell
    ```
 
-   **Com uv (recomendado):**
+   **Com uv:**
    ```sh
    uv sync
+   ```
+
+   **Com docker (recomendado):**
+   ```sh
+   docker run -it --rm --env-file .env -v "$(pwd)/dataset:/app/dataset" argos:main
    ```
 
 5. Certifique-se de que o modelo `yolov8n.pt` está no caminho configurado em `config.yaml` (ex.: `src/domain/models/yolov8n.pt`).
