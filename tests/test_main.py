@@ -16,6 +16,7 @@ def test_main_orchestration_com_injecao_de_dependencia():
     mock_parser = Mock(spec=BaseParser)
     mock_kb = Mock(spec=BaseKnowledgeBase)
     mock_analyzer = Mock(spec=BaseAnalyzer)
+    mock_saver = Mock(spec=BaseSaver)
     fake_person = PersonResponse(id=1, box={'x_min': 0, 'y_min': 0, 'x_max': 100, 'y_max': 100}, crop=b"fake_bytes", confidence=0.99)
     fake_rule = "Regra de teste para EPIs Mock."
     fake_compliance = ComplianceResponse(
@@ -34,6 +35,7 @@ def test_main_orchestration_com_injecao_de_dependencia():
     mock_config.chroma.top_k = 5
     mock_config.output = Mock()
     mock_config.output.results_path = "output/test_results.json"
+
     
     main_app = Main(
         person_detector=mock_detector,
